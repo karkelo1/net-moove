@@ -1,8 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
-  body {
-    background: linear-gradient(to right, orange, red);
-    min-height: 100vh;
-    margin: 0;
-    color: white;
-    font-family: Arial, sans-serif;
-  }
+.nav-link {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: white; /* Ensure the color is white */
+}
+
+.nav-link:hover {
+  color: #FAFB63; /* Change the color on hover if needed */
+}
+
+
+/* Navbar Toggler Button */
+.navbar-toggler {
+  border: none; /* Remove default border */
+  background-color: transparent; /* Transparent background */
+  outline: none; /* Remove focus outline */
+  transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+}
+
+/* Navbar Toggler Button - Hover */
+.navbar-toggler:hover {
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.5); /* Orange shadow on hover */
+}
+
