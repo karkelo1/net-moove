@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(to right, rgb(248, 212, 114), rgba(255, 119, 0, 0.926));
+  background: linear-gradient(to right, rgb(254, 233, 94), rgb(254, 137, 20));
   min-height: 100vh;
   margin: 0;
   color: white;
@@ -18,16 +18,18 @@ body {
   border: 2px solid #FAFB63;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 100%; /* Ensure the image is responsive */
+  width: 98%;
+ 
   height: auto;
 }
 
 .custom-heading {
-  color: #FAFB63;
+  color: #ffffff;
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   text-align: center;
-  margin: 25px; /* Ensure no default margin */
+  margin: 25px;
+  /* Ensure no default margin */
 }
 
 .btn-main {
@@ -42,27 +44,35 @@ body {
 
 .btn-main:hover {
   background-color: rgba(232, 57, 57, 0.534);
-  
+
+}
+.services-grid {
+  background-color: #ff495514;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 10px;
+
 }
 
 .service-card {
-  padding: 60px; /* Reduced padding */
-  margin: 0; /* Remove margin to eliminate spacing between cards */
+  padding: 45px;
+  
   color: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  background-color: #7BBB84; /* Default background color */
+  background-color: #7BBB84;
+  
 }
 
 .service-card:hover {
-  transform: translateY(-5px) scale(1.02); /* Move card up slightly and scale it */
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
-  background-color: #6CAE6A; /* Darker background color on hover */
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  background-color: #7ec57c;
 }
 
 .bg-service1 {
-  background-color: #7BBB84;
+  background-color: #57cf67;
 }
 
 .bg-service2 {
@@ -70,7 +80,7 @@ body {
 }
 
 .bg-service3 {
-  background-color: #A548FF;
+  background-color: #ad6fec;
 }
 
 .bg-service4 {
@@ -78,7 +88,7 @@ body {
 }
 
 .bg-service5 {
-  background-color: #6c2ac2;
+  background-color: #7131c4;
 }
 
 .bg-service6 {
@@ -86,17 +96,103 @@ body {
 }
 
 .service-card h2 {
-  font-size: 16px; /* Smaller font size */
+  font-size: 16px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin: 10px;
+
 }
 
 .img-fluid {
-
-  max-width: 96%;
+  max-width: 92%;
   height: auto;
   border-radius: 8px;
+  
+}
+
+/* New section styles */
+.why-us-section {
+  background-color: #ff495519;
+  border-radius: 15px;
+  padding: 25px 20px;
+  margin: 5px;
+  margin-top: 20px;
+  
+
+}
+
+.why-us-section h2 {
+  
+  background-color:#ff5050a1;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 5px;
+  margin-bottom: 40px;
 }
 
 
-  
+.reason-card {
+  padding: 50px;
+
+  height: 100%;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.reason-bg1 {
+  background-color: #ffa33bb6;
+}
+
+.reason-bg2 {
+  background-color: #7bbb84bf;
+}
+
+.reason-bg3 {
+  background-color: #a348ffa4;
+}
+
+.reason-card h3 {
+  font-size: 20px;
+
+  font-weight: bold;
+  color: #FAFB63;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.reason-card p {
+  color: white;
+  text-align: right;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1068px) {
+  .img-fluid {
+    max-width: 110%;
+    margin: 10px auto; /* Center align the image */
+    display: flex;
+  }
+  .reason-card {
+    padding: 20px;
+  }
+
+  .reason-card h3 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 792px) {
+  .img-fluid {
+    max-width: 95%;
+    margin: 10px auto; /* Center align the image */
+    display: block;
+  }
+}
