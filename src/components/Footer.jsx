@@ -3,7 +3,7 @@ import React from 'react';
 import '../CSS/Footer.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -12,6 +12,9 @@ const Footer = () => {
         <div className="row align-items-center">
           <div className="col-md-6 text-center mb-3 mb-md-0">
             <h4>Kontaktiere uns</h4>
+          </div>
+          <div className="justify-content-center justify-content-lg-start mb-5">
+            <Link to="/angebot-form" className="btn btn-main btn-lg btn-sm">Angebot Einholen</Link>
           </div>
           <div className="col-md-6 text-md-right text-center">
             <p className="mb-2">Email: example@example.com</p>

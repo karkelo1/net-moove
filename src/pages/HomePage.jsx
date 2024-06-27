@@ -1,18 +1,20 @@
+// src/components/HomePage.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../CSS/Homepage.css'; // Ensure this path is correct
 import coverImage from '../images/cover.png';
-import girl from '../images/girl.png'; // Ensure this path is correct
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const HomePage = () => {
   return (
     <div className="container homepage">
       {/* Banner Section */}
-      <div className="row align-items-center mb-4">
+      <div className="row align-items-center mb-4 banner">
         <div className="col-12 col-lg-6">
-          <h1 className="custom-heading">Lass deine Vision ins Leben bringen!</h1>
+          <h1 className="custom-heading">Kreative <span className='meisterwerk'> Meisterwerke </span><br /> Entfalte dein Potenzial!</h1>
+          <p className="heading">"Chancen passieren nicht. Du schaffst sie." — <br /><span className='bold'>Chris Grosser</span></p>
           <div className="justify-content-center justify-content-lg-start mb-5">
-            <button className="btn btn-main btn-lg btn-sm">Angebot Einholen</button>
+            <Link to="/angebot-form" className="btn btn-main btn-lg btn-sm">Angebot Einholen</Link>
           </div>
         </div>
         <div className="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
@@ -27,45 +29,54 @@ const HomePage = () => {
             <div className="col-12 col-md-6">
               <div className="card service-card bg-service1 m-2 sm">
                 <h2>Webseite</h2>
+                <i className="fas fa-arrow-right neon-green-arrow"></i>
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="card service-card bg-service2 m-2">
                 <h2>Social Media</h2>
+                <i className="fas fa-arrow-right neon-green-arrow"></i>
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="card service-card bg-service3 m-2">
                 <h2>3D Design</h2>
+                <i className="fas fa-arrow-right neon-green-arrow"></i>
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="card service-card bg-service4 m-2">
                 <h2>Software</h2>
+                <i className="fas fa-arrow-right neon-green-arrow"></i>
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="card service-card bg-service5 m-2">
                 <h2>Graphic Design</h2>
+                <i className="fas fa-arrow-right neon-green-arrow"></i>
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="card service-card bg-service6 m-2">
                 <h2>Ads</h2>
+                <i className="fas fa-arrow-right neon-green-arrow"></i>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-lg-4 d-flex justify-content-center align-items-center sm-s">
-          <img src={girl} alt="Bild" className="img-fluid" />
-        </div>
+      </div>
+
+      {/* All-in-One Section */}
+      <div className="all-in-one-section">
+        <h3>All in one for your business</h3>
+        <p>We provide comprehensive services to meet all your business needs, ensuring you have everything you need for success under one roof.</p>
       </div>
 
       {/* Why Us Section */}
       <div className="why-us-section">
         <h2 className="why-us-heading">WARUM WIR?</h2>
         <div className="row">
-          <div className="col-12  col-md-4 mb-3">
+          <div className="col-12 col-md-4 mb-3">
             <div className="card reason-card reason-bg1">
               <h3>QUALITÄT</h3>
               <p>Wir bieten hochwertige Dienstleistungen, die Ihre Erwartungen übertreffen werden.</p>
@@ -85,7 +96,6 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };
