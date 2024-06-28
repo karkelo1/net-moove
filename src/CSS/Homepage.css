@@ -17,9 +17,9 @@ body {
 }
 
 .cover-image {
-  border: 2px solid #12FF46;
+  border: 2px solid #C1FF72;
   border-radius: 15px;
-  box-shadow: 4px 5px 7px #12ff45c7;
+  box-shadow: 4px 4px 6px #C1FF72;
   width: 98%;
   height: auto;
 }
@@ -69,34 +69,34 @@ body {
   text-size-adjust: 54px;
   font-weight: bold;
   text-align: left;
-  margin: 36px;
+  margin: 30px;
 }
 
 .custom-heading {
-  color: #12FF46;
+  color: #C1FF72;
   font-family: 'PT Sans', sans-serif;
-  text-shadow: 4px 4px 15px #12FF46;
+  text-shadow: 4px 4px 15px #C1FF72;
   text-size-adjust: 60px;
   font-weight: bold;
   text-align: left;
-  margin: 36px;
+  margin: 30px;
   /* Ensure no default margin */
 }
 
 .btn-main {
   color: #ffffffc8;
   background-color: #0000003e;
-  box-shadow: 0 0 15px #12FF46; /* Corrected box-shadow syntax */
+  box-shadow: 0 0 15px #C1FF72; /* Corrected box-shadow syntax */
   margin-top: 15px;
   border-radius: 30px;
   font-weight: bold;
   padding: 10px 20px;
-  border: 0.5px solid #12FF46; /* Ensure border is applied correctly */
+  border: 0.5px solid#C1FF72; /* Ensure border is applied correctly */
 }
 
 .services-grid {
   background-color: #f5ad312c;
-  border-radius: 15px;
+  border-radius: 25px;
   margin: 5px;
   padding: 10px;
 }
@@ -105,17 +105,17 @@ body {
   font-family: 'PT Sans', sans-serif;
   color: #fff;
   background-color: #0000003e;
-  box-shadow: 0 0 15px #12FF46;
+  box-shadow: 0 0 15px #C1FF72;
   text-shadow: 0 0 7px #d2ffdc;
   border-radius: 15px;
   padding: 15px;
-  border: 0.5px solid #12FF46; /* Ensure border is applied correctly */
+  border: 0.5px solid #C1FF72; /* Ensure border is applied correctly */
   position: relative; /* For positioning the arrow */
 }
 
 .service-card:hover {
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 20px rgba(10, 4, 4, 0.2);
   background-color: #12ff451d;
 }
 
@@ -126,9 +126,9 @@ body {
 }
 
 .neon-green-arrow {
-  color: #39FF14; /* Neon green color */
+  color: #C1FF72; /* Neon green color */
   font-size: 24px; /* Adjust size as needed */
-  text-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 15px #39FF14;
+  text-shadow: 0 0 5px #C1FF72, 0 0 10px#C1FF72, 0 0 15px #C1FF72;
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -142,7 +142,7 @@ body {
 
 /* New section styles */
 .why-us-section {
-  background-color: #f5ad312c;
+
   border-radius: 15px;
   padding: 25px 20px;
   margin: 5px;
@@ -150,7 +150,6 @@ body {
 }
 
 .why-us-section h2 {
-  background-color: #ff5050a1;
   font-size: 20px;
   border-radius: 10px;
   padding: 10px 20px;
@@ -160,15 +159,12 @@ body {
 }
 
 .reason-card {
-  padding: 50px;
-  border-color: #12FF46;
-  box-shadow: #12FF46;
+  padding: 30px;
   border-width: 4px;
   height: 100%;
   color: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  
 }
 
 .reason-card:hover {
@@ -177,21 +173,21 @@ body {
 }
 
 .reason-bg1 {
-  background-color: #90ff3b36;
+  background-color: #be810f36;
 }
 
 .reason-bg2 {
-  background-color: #7bbb84bf;
+  background-color:  #be810f36;
 }
 
 .reason-bg3 {
-  background-color: #a348ffa4;
+  background-color:  #be810f36;
 }
 
 .reason-card h3 {
   font-size: 20px;
   font-weight: bold;
-  color: #FAFB63;
+  color: #C1FF72;
   margin-bottom: 10px;
   text-transform: uppercase;
 }

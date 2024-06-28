@@ -1,9 +1,11 @@
-// src/components/HomePage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../CSS/Homepage.css'; // Ensure this path is correct
 import coverImage from '../images/cover.png';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import usImage from '../images/us.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'; // Example solid arrow icon
+
 
 const HomePage = () => {
   return (
@@ -22,54 +24,65 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Service Section */}
-      <div className="row services-grid border-dark">
+      {/* Service and All-in-One Section */}
+      <div className="row services-and-all-in-one">
+        {/* All-in-One Section */}
+        <div className="col-lg-4 all-in-one-section">
+          <h3>All in one for your business</h3>
+          <p>We provide comprehensive services to meet all your business needs, ensuring you have everything you need for success under one roof.</p>
+        </div>
         <div className="col-lg-8">
           <div className="row gx-0">
             <div className="col-12 col-md-6">
               <div className="card service-card bg-service1 m-2 sm">
                 <h2>Webseite</h2>
-                <i className="fas fa-arrow-right neon-green-arrow"></i>
+                <FontAwesomeIcon icon={faArrowRight} className="neon-green-arrow" />
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="card service-card bg-service2 m-2">
                 <h2>Social Media</h2>
-                <i className="fas fa-arrow-right neon-green-arrow"></i>
+                <FontAwesomeIcon icon={faArrowRight} className="neon-green-arrow" />
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="card service-card bg-service3 m-2">
                 <h2>3D Design</h2>
-                <i className="fas fa-arrow-right neon-green-arrow"></i>
+                <FontAwesomeIcon icon={faArrowRight} className="neon-green-arrow" />
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="card service-card bg-service4 m-2">
                 <h2>Software</h2>
-                <i className="fas fa-arrow-right neon-green-arrow"></i>
+                <FontAwesomeIcon icon={faArrowRight} className="neon-green-arrow" />
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="card service-card bg-service5 m-2">
                 <h2>Graphic Design</h2>
-                <i className="fas fa-arrow-right neon-green-arrow"></i>
+                <FontAwesomeIcon icon={faArrowRight} className="neon-green-arrow" />
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="card service-card bg-service6 m-2">
                 <h2>Ads</h2>
-                <i className="fas fa-arrow-right neon-green-arrow"></i>
+                <FontAwesomeIcon icon={faArrowRight} className="neon-green-arrow" />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* All-in-One Section */}
-      <div className="all-in-one-section">
-        <h3>All in one for your business</h3>
-        <p>We provide comprehensive services to meet all your business needs, ensuring you have everything you need for success under one roof.</p>
+      {/* Additional Section */}
+      <div className="row additional-section align-items-center">
+        <div className="col-lg-6">
+          <h3>Meet the Founders</h3>
+          <h4>HIER UM DEIN PROBLEM ZU LOSEN</h4>
+          <p>Wir machen, was für dich funktioniert! Das Net Moove Team analysiert dein Business und liefert dir die einzigartigste Lösung, die perfekt zu dir passt.</p>
+        </div>
+        <div className="col-lg-6">
+          <img src={usImage} alt="US" className="us-image img-fluid" />
+        </div>
       </div>
 
       {/* Why Us Section */}
